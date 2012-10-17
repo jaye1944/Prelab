@@ -1,4 +1,4 @@
-Prelab2
+Prelab
 =======
 
 Small Android app to memeo the Praticles
