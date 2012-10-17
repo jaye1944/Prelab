@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomeland" >
+
+    <EditText
+        android:id="@+id/current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/go_to_add_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/current_date"
+        android:background="@drawable/gototoday"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/go_to_calander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/go_to_add_new"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gotocalendar"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/go_to_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/go_to_add_new"
+        android:layout_toRightOf="@+id/current_date"
+        android:background="@drawable/showallx"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/current_date"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/exit"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/gotosettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_exit"
+        android:layout_toRightOf="@+id/go_to_add_new"
+        android:background="@drawable/settingsx"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/go_to_add_new"
+        android:layout_below="@+id/go_to_view_all"
+        android:text="@string/add_new"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calander_page"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/go_to_view_all"
+        android:text="@string/view_all"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/gotosettings"
+        android:text="@string/settings"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView4"
+        android:text="@string/exit"
+        android:textColor="#000000" />
+
+</RelativeLayout>

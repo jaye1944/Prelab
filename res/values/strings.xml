@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">PreLab2</string>
+    <string name="menu_settings">Preference</string>
+    <string name="title_activity_welcom">PreLab2</string>
+    <string name="calander_page">Calender </string>
+    <string name="add_new">Add now</string>
+    <string name="view_all">Show All</string>
+    <string name="add_new_practical">Save</string>
+    <string name="edit">Edit</string>
+    <string name="date">Practical Date</string>
+    <string name="name">Practical Name</string>
+    <string name="time">Practical Time</string>
+    <string name="all">All Practicals</string>
+    <string name="set">Save it</string>
+    <string name="cancel"> Cancel </string>
+    <string name="browse">Search it</string>
+    <string name="exit">Exit now</string>
+    <string name="listviewtitle">Practicals</string>
+    <string name="settings">Settings</string>
+    <string name="gotohome">Go Home</string>
+   
+    
+
+</resources>

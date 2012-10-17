@@ -1,0 +1,57 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/alertland" >
+
+        <Button
+            android:id="@+id/buttongotocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/gotocalendar"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/buttongotocal"
+            android:layout_below="@+id/buttongotocal"
+            android:text="@string/calander_page"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/buttonexits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/buttongotocal"
+            android:layout_marginRight="83dp"
+            android:background="@drawable/homex"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignRight="@+id/buttonexits"
+            android:text="@string/gotohome"
+            android:textColor="#000000" />
+        
+        <ListView
+             android:id="@+id/alert_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp" 
+            android:paddingRight="20dp" >
+			
+        </ListView>
+
+    </RelativeLayout>

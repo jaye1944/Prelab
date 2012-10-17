@@ -1,0 +1,130 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/clander" >
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText2"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="19dp"
+            android:clickable="true"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="none|text" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignTop="@+id/textView1"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText1"
+            android:layout_alignLeft="@+id/editText1"
+            android:text="@string/date" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="17dp"
+            android:text="@string/time" />
+
+        <Button
+            android:id="@+id/new_practical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/editText3"
+            android:background="@drawable/savex"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/new_practical"
+            android:layout_alignBottom="@+id/new_practical"
+            android:layout_toLeftOf="@+id/editText2"
+            android:background="@drawable/searchx"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/browse"
+            android:layout_alignBottom="@+id/browse"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/cancelx"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/new_practical"
+            android:layout_below="@+id/new_practical"
+            android:text="@string/set"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/browse"
+            android:text="@string/browse"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignRight="@+id/cancel"
+            android:text="@string/cancel"
+            android:textColor="#000000" />
+
+    </RelativeLayout>

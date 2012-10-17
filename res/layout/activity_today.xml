@@ -1,0 +1,68 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/today" >
+
+        <EditText
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/New"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/today"
+            android:layout_below="@+id/today"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/gototoday"
+            android:onClick="onClick" >
+        </Button>
+
+        <Button
+            android:id="@+id/GetAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/New"
+            android:layout_alignBottom="@+id/New"
+            android:layout_alignRight="@+id/today"
+            android:background="@drawable/showallx"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/New"
+            android:layout_below="@+id/GetAll"
+            android:text="@string/add_new"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/GetAll"
+            android:text="@string/view_all"
+            android:textColor="#000000" />
+        
+         <ListView
+            android:id="@+id/today_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+        </ListView>
+
+    </RelativeLayout>

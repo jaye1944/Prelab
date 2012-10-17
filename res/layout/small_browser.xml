@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout android:layout_width="fill_parent" 
+        android:weightSum="100"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText
+            android:id="@+id/geturl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:inputType="text" >
+
+		</EditText>           
+
+    <Button
+        android:id="@+id/gbutton"
+        android:layout_weight="23"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/goog"></Button>
+    <Button
+        android:id="@+id/wbutton"
+        android:layout_weight="23"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wiki"></Button>
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_weight="23"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"></Button>
+    <Button
+        android:id="@+id/fowabutton"
+        android:layout_weight="23"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/foward"></Button>
+    
+	</LinearLayout>
+
+   
+    <WebView 
+         android:id="@+id/vbBrowser"
+         android:layout_width="fill_parent" android:layout_height="fill_parent"
+         />
+
+</LinearLayout>

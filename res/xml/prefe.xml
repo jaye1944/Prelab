@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <CheckBoxPreference
+        android:title="Clock 24H"
+        android:defaultValue="true"
+        android:key="clock"
+        android:summary="Ehable clock type"
+        />
+    <CheckBoxPreference
+        android:title="Browser"
+        android:defaultValue="false"
+        android:key="brows"
+        android:summary="Enable Browser fullscreen mode"
+        />
+    <ListPreference 
+        android:title="Vibrator"
+        android:key="vlist"
+        android:summary="Chanange vibrator settings"
+        android:entries="@array/viblist" 
+        android:defaultValue="1"
+        android:entryValues="@array/vibvalus"/>
+    
+    <ListPreference 
+        android:title="Alarm"
+        android:key="alarm"
+        android:summary="Chanange Alarm settings"
+        android:entries="@array/alist" 
+        android:defaultValue="1"
+        android:entryValues="@array/avalus"/>
+    
+</PreferenceScreen>
